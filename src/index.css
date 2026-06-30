@@ -2,28 +2,29 @@
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-  /* HSL Tailored Colors - Light Mode */
-  --bg-primary: #f8fafc;
-  --bg-secondary: #ffffff;
+  /* HSL Tailored Colors - Light Mode (Minimalist White, Black, Neon Blue) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
   --bg-tertiary: #f1f5f9;
   
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
+  --text-primary: #000000;
+  --text-secondary: #334155;
   --text-muted: #64748b;
   
-  --accent: #6366f1; /* Indigo */
-  --accent-light: #818cf8;
-  --accent-bg: rgba(99, 102, 241, 0.08);
-  --accent-border: rgba(99, 102, 241, 0.2);
+  --accent: #0066cc; /* Rich Blue for readability in Light Mode */
+  --accent-light: #00d2ff;
+  --accent-bg: rgba(0, 102, 204, 0.06);
+  --accent-border: rgba(0, 102, 204, 0.2);
+  --accent-glow: rgba(0, 102, 204, 0.15);
   
   --border-color: #e2e8f0;
-  --card-bg: rgba(255, 255, 255, 0.7);
-  --card-border: rgba(226, 232, 240, 0.8);
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
   
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
-  --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  --shadow-premium: 0 0 20px rgba(0, 102, 204, 0.1);
 
   font-family: var(--font-body);
   font-size: 16px;
@@ -41,28 +42,29 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* HSL Tailored Colors - Dark Mode */
-    --bg-primary: #0b0f19;
-    --bg-secondary: #111827;
-    --bg-tertiary: #1f2937;
+    /* HSL Tailored Colors - Dark Mode (Minimalist Deep Black, Pure Neon Blue) */
+    --bg-primary: #050508;
+    --bg-secondary: #0c0d12;
+    --bg-tertiary: #131520;
     
-    --text-primary: #f9fafb;
-    --text-secondary: #d1d5db;
-    --text-muted: #9ca3af;
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
     
-    --accent: #818cf8;
-    --accent-light: #a5b4fc;
-    --accent-bg: rgba(129, 140, 248, 0.12);
-    --accent-border: rgba(129, 140, 248, 0.3);
+    --accent: #00f0ff; /* Electric Neon Blue */
+    --accent-light: #80f5ff;
+    --accent-bg: rgba(0, 240, 255, 0.05);
+    --accent-border: rgba(0, 240, 255, 0.3);
+    --accent-glow: rgba(0, 240, 255, 0.4);
     
-    --border-color: #1f2937;
-    --card-bg: rgba(17, 24, 39, 0.7);
-    --card-border: rgba(31, 41, 55, 0.6);
+    --border-color: #1a1d29;
+    --card-bg: #0c0d12;
+    --card-border: #1a1d29;
     
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
-    --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.8);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.7);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
+    --shadow-premium: 0 0 25px rgba(0, 240, 255, 0.15);
   }
 }
 
@@ -141,4 +143,5 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
 }
+
 
